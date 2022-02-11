@@ -1,0 +1,229 @@
+/* –– MORPHMAN COLOR CODING - Go to Google and search 'colour picker', then use hex code to change these ;)  */
+[mtype=unknown] { color: #f21313; }
+[mtype=seen] { color: orange; }
+[mtype=known] { color: #f21313; }
+
+body {
+	min-height: 100vh;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.front rt {
+    visibility: hidden;
+}
+
+.front ruby:hover rt {
+    visibility: visible;
+}
+
+rt {
+    color: rgba(245, 245, 245, 0.651);
+	font-weight: 200;
+}
+
+/* 
+http://jsfiddle.net/W7w9s/6/
+*/
+.item-name-notebook-style-text-underline {
+    line-height: 80px !important;
+	font-size: 28px !important;
+
+	height: 80px;
+	display: flex;
+	align-items: flex-end;
+
+	/* 78/76 is aessentially aligned, but can't fix there being too muchs pace before the underline there. still like 1px off though */
+	/* 75/73 is not aligned due to furigana stretching jp taller */
+	/* 80px/78px: now perfectly aligned. just spacing problem left. */
+    background-image: -moz-linear-gradient(top , rgba(255, 255, 255, 0) 78px, #34271a 78px, #34271a 80px);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 78px, #34271a 78px, #34271a 80px);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 78px, #34271a 78px, #34271a 80px);
+    background-repeat: repeat-y;
+    background-size: 75% 80px;
+
+	margin: 0 !important;
+	margin-bottom: 22px !important;
+	padding: 0 !important;
+
+	vertical-align: bottom !important;
+}
+
+.item-title-span {
+	line-height: normal;
+}
+
+.item-descrip-notebook-style-text-underline {
+    line-height: 52px !important;
+	font-size: 22px !important;
+
+	/* 70/68: perfect alignment, but spacing si too much. */
+	/* 66/64: still perfect alignment */
+	/* 62/60: still perfect */
+	/* 58/56: still perfect */
+	/* 56/54: still perfect */
+	/* 54/52: still perf */
+	/* 52/50: still perfect */
+
+    background-image: -moz-linear-gradient(top , rgba(255, 255, 255, 0) 50px, #34271a 50px, #34271a 52px);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 50px, #34271a 50px, #34271a 52px);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50px, #34271a 50px, #34271a 52px);
+    background-repeat: repeat-y;
+    background-size: 100% 52px;
+	vertical-align: bottom !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+div.simulated-span {
+  display: inline;
+}
+
+div.simulated-span div {
+  display: inline;
+  background-color: red;
+}
+
+div.hr {
+    background-color: #34271a;
+    border: 1px solid #34271a;
+    height: 3px;
+    margin: 30px 0;
+    width: 100%;
+}
+
+#main {
+	background-color:rgb(19, 20, 21, 0.50) !important;
+
+	min-width: 700px;
+	max-width: 1600px;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+
+	max-height: 85vw;
+
+	padding: 0px;
+	margin: 15px !important;
+
+	border-radius: 15px;
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	display: -webkit-box;
+	
+	-webkit-box-align: stretch;
+	-webkit-box-pack: center;
+	-webkit-box-orient: vertical;
+}
+
+#main::-webkit-scrollbar {
+    display: none; 
+}
+
+.jp-en-side-by-side-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.card {
+    font-family: "Noto Serif JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    text-align: left;
+    color: white;
+    background-color:black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Seemingly only Ankiweb.net reviews have the .card as a div, the other apps are body.card */
+div#qa_box.card {
+   background-size: cover;
+   background-position: center;
+   background-repeat: repeat-y;
+   background-color: #fefef2;
+}
+
+/* Used for background images on all platforms other than AnkiWeb */
+.background-image-after-card {
+    content: "";
+    /*background: url("_background_02_clear.jpg");*/
+    background-size: cover;
+    background-position: center;
+	background-repeat: repeat-y;
+    background-color: #fefef2;
+    opacity: 0.55;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;     
+}
+
+
+#image {
+ 	text-align: center;
+	overflow-y: scroll;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	vertical-align: baseline;
+    object-fit: cover;
+}
+
+#image::-webkit-scrollbar {
+    display: none;
+}
+
+#image img {
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.item-text-wrapper {
+	flex: 1;
+	color: WhiteSmoke;	
+	text-shadow: 1px 1px 4px #1b1b1c;
+	margin: 3%;
+}
+
+#jpSentence {
+}
+
+#enSentence {
+	font-weight: 200;
+}
+
+.notes-vocab-wrapper {
+	display: flex;
+}
+
+.notes-vocab-wrapper div {
+	flex: 1;
+	margin: 3%;
+	font-size: 22px;
+	line-height: 50px !important;
+	font-weight: 200;
+}
+
+.personalVocabularyNotes {
+}
+
+a:link {
+	color: white;
+	opacity:0.4;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	opacity: 1;
+	text-decoration: none;
+}
+
+#hidden-data-for-media-export {
+  display: none;
+}

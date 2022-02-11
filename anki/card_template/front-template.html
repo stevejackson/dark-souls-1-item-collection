@@ -1,0 +1,121 @@
+<div id="main" class="front">
+    <div id="jpSentence" class="item-text-wrapper">
+
+        <div class="item-name-notebook-style-text-underline">
+            <div class="item-title-span">
+                {{furigana::Item Name (JP) (Furigana)}}
+            </div>
+        </div>
+
+
+        <div class="item-descrip-notebook-style-text-underline">
+            <div class="simulated-span">
+                {{furigana::Item Description (JP) (Furigana)}}
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="hidden-data-for-media-export">
+  <img src="_background_01_clear.jpg">
+  <img src="_background_02_clear.jpg">
+  <img src="_background_03_clear.jpg">
+  <img src="_background_04_clear.jpg">
+  <img src="_background_05_clear.jpg">
+</div>
+
+<script type="text/javascript">
+    var backgroundElementClassName = "background-image-after-card";
+    var percentOfTimeToChooseRandomBackground = 50;
+    var backgroundsArray = [
+        "background_01_clear", 
+        "background_02_clear", 
+        "background_03_clear", 
+        "background_04_clear", 
+        /*"background_05_clear"*/
+        "background_mine_01",
+        "background_mine_02",
+        "background_mine_03",
+        "background_mine_04",
+        "background_mine_05",
+        "background_mine_06",
+        "background_mine_07",
+        "background_mine_08"
+    ];
+    var ankiwebQaBox = document.getElementById('qa_box');
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    function pickBackground() {                                                                    
+        var randomNumber = getRandomInt(backgroundsArray.length);
+        var filename = "_".concat(backgroundsArray[randomNumber], ".jpg");
+        var url = 'url("' + filename + '")';
+
+        return url;
+    }
+
+    function isOnAnkiWeb() {
+        if(ankiwebQaBox) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    function shouldReplaceBackground() {
+        // Always replace background if there isn't one yet.
+        if(document.getElementsByClassName(backgroundElementClassName).length === 0) {
+            return true;
+        }
+
+        return getRandomInt(100) > percentOfTimeToChooseRandomBackground;
+    }
+
+    /*
+
+    Background switching logic:
+
+    * Each time a front of a card is reached, this code is run.
+    * Select a random background image and use it by using the existing background image element
+    or creating a new one.
+    * Because the code is not re-run on the back template, it will retain the same background for the
+    front and back of the same card. (And the HTML is outside the "card" element scope so it won't
+    be overridden)
+    * Only replace the background image if we pass a random check as well - this variable
+    will allow customizing how often the background changes. Every single card may be a bit
+    too much.
+
+    */
+    function setBackground() {
+        if(!shouldReplaceBackground()) {
+            return true;
+        }
+
+        var background = pickBackground();
+        var cardElement = document.getElementsByClassName("card");
+        var backgroundElement;
+
+        if(document.getElementsByClassName(backgroundElementClassName).length > 0) {
+            backgroundElement = document.getElementsByClassName(backgroundElementClassName)[0];
+        }
+        else {
+            backgroundElement = document.createElement('div');
+            backgroundElement.className = backgroundElementClassName;
+            document.body.appendChild(backgroundElement);
+        }
+
+        backgroundElement.style.backgroundImage = background;
+    }
+
+    if(isOnAnkiWeb()) {
+        ankiwebQaBox.style.backgroundImage = pickBackground();
+    }
+    else {
+        setBackground();
+    }
+
+</script>
