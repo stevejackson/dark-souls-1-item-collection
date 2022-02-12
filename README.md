@@ -80,7 +80,14 @@ TODO: the alternating backgrounds annoy me
 
 ### Furigana
 
-TODO
+Far and away, the most time consuming part of this project was ensuring that the furigana was correct. So many words in these item descriptions are open to interpretation as to what their pronunciation is, or at least would differ from what's obvious in the dictionary. I spent a *lot* of time and effort making sure the furigana is as accurate as possible.
+
+First, I used the Anki addon "Japanese Support" to auto-generate some furigana. This usually has quite a few errors even with more common Japanese text, so I had to manually fix those errors. Then, for more Souls-related or weapon-related jargon, I had to scour the internet for answers.
+
+- I'd watch native Japanese speakers playing the game
+- Look at native Japanese dictionaries
+- Utilize google searches like `ダークソウル 打刀`, `ダークソウル 打刀　読み方`
+- A more advanced google search like `"打刀" "うちがたな"` will force results that contain both of those terms, which is very useful for seeing if any native speakers have written the kana out that you're guessing is correct. Oftentimes you'll come across Japanese that are also asking how to pronoune something, dictionaries or other sites providing the kana for pronunciation, etc.
 
 ### Screenshots
 
@@ -94,6 +101,8 @@ Afterwards, I processed those screenshots with an Irfanview script and then drag
 cd "C:\Program Files\IrfanView"
 i_view64.exe "D:\Dropbox\Video Game Anki Decks\Dark Souls 1 Project\To Process\*.png" /crop=(145,220,1095,765,0) /convert="D:\Dropbox\Video Game Anki Decks\Dark Souls 1 Project\Converted\*.png"
 ```
+
+It took around ~4 playthroughs to gather all the items!
 
 ## Credits & Thanks
 
