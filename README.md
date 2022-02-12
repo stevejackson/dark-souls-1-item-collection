@@ -4,6 +4,14 @@ All Dark Souls 1 Items, in Japanese & English, as an Anki deck. Intended usage i
 
 This repository houses the latest card templates used for that anki deck.
 
+## Example card
+
+### Front
+![Front side](/example_images/DarkBead_Front.png)
+
+### Back
+![Back side](/example_images/DarkBead_Back.png)
+
 ## How to Re-export & Share deck
 
 1. Anki: File -> Export -> Anki Deck Package
