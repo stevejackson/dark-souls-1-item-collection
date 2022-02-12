@@ -1,6 +1,6 @@
 # Dark Souls 1 Japanese Item Collection
 
-All Dark Souls 1 Items, in Japanese & English, as an Anki deck. Intended usage is for learning Japanese, although it also functions as a way to compare localizations or easily search item descriptions for text.
+All 682 Dark Souls 1 Items, in Japanese & English, as an Anki deck. Intended usage is for learning Japanese, although it also functions as a way to compare localizations or easily search item descriptions for text.
 
 This repository houses the latest card templates used for that anki deck.
 
@@ -22,7 +22,8 @@ TODO: add link to the anki deck on ankiweb.net
 2. Anki: File -> Switch Profile, use a separate profile
 3. Anki: File -> Import; import the deck exported above
 4. In this new profile, remove the tags `personaltointerval` and `personalskip` for all cards
-5. Anki: On the Dark Souls 1 Item Deck, right click, click Export -- do this again, but from the new profile, now that the cards have been cleaned up.
+5. Move the deck up out of its tree organization to top level, so it doesn't include that structure in the export.
+6. Anki: On the Dark Souls 1 Item Deck, right click, click Export -- do this again, but from the new profile, now that the cards have been cleaned up.
 
 ## How to Use the Anki deck for studying Japanese
 
