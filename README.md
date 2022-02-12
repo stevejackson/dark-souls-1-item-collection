@@ -53,7 +53,9 @@ Here is what I would personally recommend for the somewhat daunting task of usin
 
 ### Customize ankiweb.net for reviewing
 
-As mentioned above, I prefer to use ankiweb.net while reviewing cards in this deck, since it allows me to use Yomichan for lookups. It's still much uglier than the native Anki application, but I haven't put more effort into styling it better. Using yomichan is just too good to pass up.
+As mentioned above, I prefer to use ankiweb.net while reviewing cards in this deck, since it allows me to use Yomichan for lookups. It's uglier than the native Anki application, so I made a quick script to at least make the screen less white, and a bit less cramped, but I haven't put more effort into styling it better. It's still quite awful - could be fixed with a bit more time.
+
+Using yomichan is just too good to pass up.
 
 I use the Stylebot chrome addon with this stylesheet:
 
