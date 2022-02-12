@@ -4,7 +4,7 @@ All 682 Dark Souls 1 Items, in Japanese & English, as an Anki deck. Intended usa
 
 This repository houses the latest card templates used for that anki deck.
 
-TODO: add link to the anki deck on ankiweb.net
+**The latest version can be downloaded here**: https://www.dropbox.com/s/7d7luhuf83dawl1/2022_02_11.03_Dark%20Souls%201%20Items.apkg?dl=0
 
 ## Example card
 
