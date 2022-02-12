@@ -9,21 +9,14 @@ This repository houses the latest card templates used for that anki deck.
 ## Example card
 
 ### Front
-![Front side](/example_images/DarkBead_Front.png)
+![Front side](/example_images/DarkBead1.png)
 
 ### Back
-![Back side](/example_images/DarkBead_Back.png)
+![Back side 1](/example_images/DarkBead2.png)
+![Back side 2](/example_images/DarkBead3.png)
 
-## How to Re-export & Share deck
-
-1. Anki: On the Dark Souls 1 Item Deck, right click, click Export
-  - Disable "Include scheduling information"
-  - Enable "Include media"
-2. Anki: File -> Switch Profile, use a separate profile
-3. Anki: File -> Import; import the deck exported above
-4. In this new profile, remove the tags `personaltointerval` and `personalskip` for all cards
-5. Move the deck up out of its tree organization to top level, so it doesn't include that structure in the export.
-6. Anki: On the Dark Souls 1 Item Deck, right click, click Export -- do this again, but from the new profile, now that the cards have been cleaned up.
+### Another example
+![Back side 1](/example_images/AuralDecoy1.png)
 
 ## How to Use the Anki deck for studying Japanese
 
@@ -123,6 +116,17 @@ i_view64.exe "D:\Dropbox\Video Game Anki Decks\Dark Souls 1 Project\To Process\*
 ```
 
 It took around ~4 playthroughs to gather all the items!
+
+## How to Re-export & Share deck
+
+1. Anki: On the Dark Souls 1 Item Deck, right click, click Export
+  - Disable "Include scheduling information"
+  - Enable "Include media"
+2. Anki: File -> Switch Profile, use a separate profile
+3. Anki: File -> Import; import the deck exported above
+4. In this new profile, remove the tags `personaltointerval` and `personalskip` for all cards
+5. Move the deck up out of its tree organization to top level, so it doesn't include that structure in the export.
+6. Anki: On the Dark Souls 1 Item Deck, right click, click Export -- do this again, but from the new profile, now that the cards have been cleaned up.
 
 ## Credits & Thanks
 
