@@ -16,8 +16,7 @@ TODO: add link to the anki deck on ankiweb.net
 
 ## How to Re-export & Share deck
 
-1. Anki: File -> Export -> Anki Deck Package
-  - Include: Dark Souls 1 Items
+1. Anki: On the Dark Souls 1 Item Deck, right click, click Export
   - Disable "Include scheduling information"
   - Enable "Include media"
 2. Anki: File -> Switch Profile, use a separate profile
