@@ -104,7 +104,7 @@ First, I used the Anki addon "Japanese Support" to auto-generate some furigana. 
 - I'd watch native Japanese speakers playing the game
 - Look at native Japanese dictionaries
 - Utilize google searches like `ダークソウル 打刀`, `ダークソウル 打刀　読み方`
-- A more advanced google search like `"打刀" "うちがたな"` will force results that contain both of those terms, which is very useful for seeing if any native speakers have written the kana out that you're guessing is correct. Oftentimes you'll come across Japanese that are also asking how to pronoune something, dictionaries or other sites providing the kana for pronunciation, etc.
+- A more advanced google search like `"打刀" "うちがたな"` will force results that contain both of those terms, which is very useful for seeing if any native speakers have written the kana out that you're guessing is correct. Oftentimes you'll come across Japanese that are also asking how to pronounce something, dictionaries or other sites providing the kana for pronunciation, etc.
 
 ### Screenshots
 
