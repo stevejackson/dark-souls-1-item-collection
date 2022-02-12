@@ -72,9 +72,27 @@ Set to `URLs on the domain`: `ankiuser.net`
 
 ## FAQ
 
-TODO: is the pronunciation/furigana correct for X word?
-TODO: mobile support
-TODO: the alternating backgrounds annoy me
+### Is the pronunciation/furigana correct for X word?
+
+tl;dr: Probably! But there could also be other valid readings.
+
+The biggest challenge of this project was ensuring the furigana readings were correct. I put a LOT of time into it. There could be a few mistakes left, of course. But I gathered a lot of the readings by listening to a native Japanese speaker read item descriptions, and spent a lot of time googling other items and seeing how native speakers chose to pronounce those.
+
+There are lots of words invented solely for Dark Souls by the writers, and Japanese speakers don't strictly follow the general guidelines of when to use on'yomi and kun'yumi, so you'll hear them using lots of different pronunciations.
+
+### This doesn't work on AnkiDroid, Anki iOS, etc.
+
+Because I don't personally use these, I have not spent time adding mobile support for the layout. It shouldn't be that hard to edit the layout to support mobile, so if someone wants to do it, please feel free to share. But it seems hard to handle the process of doing dictionary lookups from mobile, so it wouldn't be ideal to review there.
+
+### Can I disable the changing background images?
+
+Yes. In the Anki browser, select any card from this deck. Click "Cards" to open the card template editor. On the `Front Template`, scroll until you find `percentOfTimeToChooseRandomBackground` and change the value from `100` to `0`. Or, change it to `50` if you only want a new background on `50%` of the cards, etc.
+
+### What is the English text from?
+
+The English text is the item description from the English copy of the game. It is **not** a 1:1 translation of the Japanese. Like all games, it has been localized, so you'll often notice they don't exactly line up.
+
+Most of the time, I grabbed the English text from https://darksouls.fandom.com/, as it seemed to have the best formatted version. Some of the other English descriptions will come from the text extracted from the game using the TextVessel tool.
 
 ## How did I make this?
 
@@ -106,8 +124,8 @@ It took around ~4 playthroughs to gather all the items!
 
 ## Credits & Thanks
 
-TODO fromsoft
-TODO gamegengo
-TODO dark souls item spreadsheet source
-TODO zetsuken
-TODO that blog post with lots of words
+- FromSoftware
+- u/kymojo & MeowMaritus for the spreadsheet containing Japanese/English
+- https://www.youtube.com/playlist?list=PLrbvbc7Y4NFG8GtwJq8MK7eztzV0ZEM36
+- 絶険、あるいは逃げられぬHDチャンネル: A Japanese youtuber that did a playthrough of Dark Souls 1 while reading out many item descriptions.
+- This blog post which was quite helpful with a lot of Dark Souls-specific language that native speakers might not know how to read: https://bukimara.link/%E3%82%BD%E3%82%A6%E3%83%AB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E6%BC%A2%E5%AD%97%E3%81%AE%E8%AA%AD%E3%81%BF%E6%96%B9%E3%81%BE%E3%81%A8%E3%82%81
