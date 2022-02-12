@@ -23,11 +23,19 @@
   <img src="_background_03_clear.jpg">
   <img src="_background_04_clear.jpg">
   <img src="_background_05_clear.jpg">
+  <img src="_background_mine_01.jpg">
+  <img src="_background_mine_02.jpg">
+  <img src="_background_mine_03.jpg">
+  <img src="_background_mine_04.jpg">
+  <img src="_background_mine_05.jpg">
+  <img src="_background_mine_06.jpg">
+  <img src="_background_mine_07.jpg">
+  <img src="_background_mine_08.jpg">
 </div>
 
 <script type="text/javascript">
     var backgroundElementClassName = "background-image-after-card";
-    var percentOfTimeToChooseRandomBackground = 50;
+    var percentOfTimeToChooseRandomBackground = 100;
     var backgroundsArray = [
         "background_01_clear", 
         "background_02_clear", 
@@ -72,7 +80,7 @@
             return true;
         }
 
-        return getRandomInt(100) > percentOfTimeToChooseRandomBackground;
+        return getRandomInt(100) < percentOfTimeToChooseRandomBackground;
     }
 
     /*
