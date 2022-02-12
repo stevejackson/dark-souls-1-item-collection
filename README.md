@@ -22,7 +22,7 @@ TODO: add link to the anki deck on ankiweb.net
 2. Anki: File -> Switch Profile, use a separate profile
 3. Anki: File -> Import; import the deck exported above
 4. In this new profile, remove the tags `personaltointerval` and `personalskip` for all cards
-5. Anki: File -> Export -> Anki Deck page -- do this again, but from the new profile, now that the cards have been cleaned up.
+5. Anki: On the Dark Souls 1 Item Deck, right click, click Export -- do this again, but from the new profile, now that the cards have been cleaned up.
 
 ## How to Use the Anki deck for studying Japanese
 
